@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Portfolio Landing Page - Almir R</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <section class="banner" id="sec">.
+    <header>
+      <a href="#" class="logo"> <img src="image/android-chrome-192x192.png" alt="logo"></a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h2>Olá pessoas,<br>Eu sou<span> Almir Ramos </span></h2>
+      <p>Olá, seja bem vindo aqui! Me chamo Almir e sou grato por está nesse meio que é programação. Atuava em outros serviços por falta de direcionamento, aliás a maiorias das pessoas não podem escolher a area que vai trabakhar, pois elas precisam trabalhar e suas escolhas se torna o menos importante. Assim como milhoes de Brasileiro eu tbm estou nessa bolha. Mas agora encontrei o que realmente gosto de fazer e estou aqui programando, me ajude e vamos seguir juntps nessa. Aqui está meu contato e meus projetos, se quieser fazer amizades estou ai. Sintas-se a vontade! </p>
+      <a href="#">Saiba mais</a>
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png"></a></li>
+      <li><a href="#"><img src="twitter.png"></a></li>
+      <li><a href="#"><img src="linkedin.png"></a></li>
+    </ul>
+  </section>
+  <div id="navigation">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  <script type="text/javascript">
+    function toggle(){
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active')
+      nav.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
