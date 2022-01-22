@@ -33,8 +33,9 @@ header .logo
 header #toggle
 {
   position: relative;
-  width: 30px;
+  width: 50px;
   height: 30px;
+  right: 105px;
   cursor: pointer;
 }
 header #toggle:before
@@ -59,6 +60,14 @@ header #toggle:after
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  cursor: pointer;
+}
+.logo img:hover{
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  transition: 0.8s;
+  border: 2px  solid #40c3ff;
 }
 .banner.active #toggle:before
 {
@@ -78,7 +87,7 @@ header #toggle:after
   width: 100%;
   padding: 100px;
   min-height: 100vh;
-  background-color: #000;
+  background-color: rgb(0,0,0);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -91,7 +100,7 @@ header #toggle:after
 }
 .banner .content
 {
-  max-width: 600px;
+  max-width: 1200px;
 }
 .banner .content h2
 {
@@ -141,7 +150,7 @@ header #toggle:after
   height: 50px;
   text-decoration: none;
   border: 1px solid #fff;
-  margin: 10px 0 0;
+  margin: 10px 100px 0;
 }
 .sci li a:hover
 {
@@ -188,7 +197,7 @@ header #toggle:after
   font-weight: 600;
   text-transform: uppercase;
 }
-@media (max-width: 767px)
+@media (max-width: 1600px)
 {
   header
   {
@@ -198,14 +207,9 @@ header #toggle:after
   {
     padding: 100px 50px 150px;
   }
-  .banner .content h2
+  .banner .content
   {
-    font-size: 1.8em;
-  }
-  .banner .content p,
-  .banner .content a
-  {
-    font-size: 1em;
+    margin-top: 50px;
   }
   .banner.active
   {
